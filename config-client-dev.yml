@@ -1,0 +1,20 @@
+server:
+  port: 8056
+foo: foo version 5600000-11111
+
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include:
+          - info
+          - health
+          - refresh #热刷新 只处理post请求实现容器热刷新
+eureka:
+  client:
+    service-url:  # eureka的地址信息
+      defaultZone: http://server1:10089/eureka/,http://server2:10087/eureka/
+spring:
+  application:
+    name: first-config-client-dev
