@@ -1,6 +1,6 @@
 server:
   port: 8056
-foo: foo version 5600000-11111
+foo: foo version 5600000-22222
 
 management:
   endpoints:
